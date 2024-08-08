@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	
+<title>孕期瑜伽好处多</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <style type="text/css">
+        p {
+            font-size: 3vw;
+			text-align: left;
+            padding-left: -2em;
+        }
+        p:first-letter {
+            margin-left: 2em;
+        }
+		h1{
+			font-size: 5vw;
+			text-align: center; 
+		}
+		h2{
+			font-size: 4vw;
+			text-align: left; 
+		}
+		div{
+			margin:0 auto;
+			width: 85%;
+			padding: 10px;
+			
+		}
+    </style>
+	
+</head>
+
+<body>
+	
+	<p id="dateTxt"></p>
+	<h1>孕期瑜伽的好处</h1>
+    <div>
+		
+
+<p>1、帮助产程，加速生产，增加顺产的几率。</p>
+
+<p>2、放松肌肉，缓解紧张情绪，焦虑。</p>
+
+<p>3、打开骨盆，增加盆腔区域的血液循环，缓解孕期腰骶疼痛，耻骨联合痛增加盆底肌肉弹性，有助于产后恢复。</p>
+
+<p>4、让宝宝灵活敏锐，健康成长，纠正胎位。</p>
+
+<p>5、告别便秘，促进胃肠蠕动。</p>
+
+<p>6、改善浮肿，缓解静脉曲张。</p>
+
+<p>7、调节呼吸，增强心肺功能。</p>
+
+<p>8、控制体重，减少妊高症的发病率，有效控制妊娠期糖尿病。</p>
+
+<h1>瑜伽球的好处</p>
+
+<p>瑜伽球作为一种柔和的有氧运动很适合孕妇锻炼瑜伽球的最高境界是人与球融为一体，瑜伽球操的动作设计力图达到人体与球面的充分接触，而瑜伽球是由柔软的PVC材料制成，当人体与之接触时，内部充气的瑜伽球会均匀地抚摸人体的接触部位从而产生按摩作用，这有益于促进血液循环。</p>
+		
+
+	</div>
+</body>
+</html>
+
+<script>
+    "use strict";
+    const week = ['天', '一', '二', '三', '四', '五', '六'],
+        dom = document.getElementById("dateTxt"),
+        checkTime = i => (i < 10) ? `0${i}` : i; // 在小于10的数字前加一个‘0’
+    let today;
+    
+    function startTime() {
+        today = new Date();
+        dom.innerHTML = `星期${week[today.getDay()]} ：${checkTime(today.getHours())}:${checkTime(today.getMinutes())}:${checkTime(today.getSeconds())}`;
+    }
+    setInterval(startTime, 500); //循环计时
+</script>
+
